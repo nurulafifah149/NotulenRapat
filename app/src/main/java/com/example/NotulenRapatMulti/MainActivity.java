@@ -48,7 +48,6 @@
         TextView txt_id, txt_username;
         String id, username;
         SharedPreferences sharedpreferences;
-
         Toolbar toolbar;
         FloatingActionButton fab;
         ListView list;
@@ -61,8 +60,6 @@
         View dialogView;
         EditText txt_id2, txt_tanggal, txt_waktu,txt_lokasi, txt_kehadiran, txt_topik,txt_judul, txt_isi;
         String id2, tanggal, waktu, lokasi, kehadiran, topik, judul, isi;
-
-
 
         public static final String TAG_ID = "id";
         public static final String TAG_USERNAME = "username";
@@ -130,8 +127,6 @@
             fab     = (FloatingActionButton) findViewById(R.id.fab_add);
             swipe   = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
             list    = (ListView) findViewById(R.id.list);
-        }
-
 
             // untuk mengisi data dari JSON ke dalam adapter
             adapter = new Adapter(MainActivity.this, itemList);
@@ -155,7 +150,8 @@
             fab.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    DialogForm("null","","", "","","","", "","SIMPAN" );
+                    DialogForm("0","null","null","null","null",
+                            "null","null", "null","SIMPAN" );
                 }
             });
 
@@ -221,7 +217,7 @@
             dialog.setIcon(R.mipmap.ic_launcher);
             dialog.setTitle("Form Notulen");
 
-            txt_id2      = (EditText) dialogView.findViewById(R.id.txt_id2);
+            txt_id      = (EditText) dialogView.findViewById(R.id.txt_id2);
             txt_tanggal = (EditText) dialogView.findViewById(R.id.txt_tanggal);
             txt_waktu  = (EditText) dialogView.findViewById(R.id.txt_waktu);
             txt_lokasi = (EditText) dialogView.findViewById(R.id.txt_lokasi);
@@ -273,7 +269,6 @@
             dialog.show();
         }
 
-
         // untuk menampilkan semua data pada listview
         private void callVolley(){
             itemList.clear();
@@ -294,13 +289,13 @@
                             Data item = new Data();
 
                             item.setId2(obj.getString(TAG_ID2));
-                            item.setTanggal(obj.getString(TAG_TANGGAL));
-                            item.setWaktu(obj.getString(TAG_WAKTU));
-                            item.setLokasi(obj.getString(TAG_LOKASI));
-                            item.setKehadiran(obj.getString(TAG_KEHADIRAN));
+                            item.setTopik(obj.getString(TAG_TANGGAL));
+                            item.setTopik(obj.getString(TAG_WAKTU));
+                            item.setTopik(obj.getString(TAG_LOKASI));
+                            item.setTopik(obj.getString(TAG_KEHADIRAN));
                             item.setTopik(obj.getString(TAG_TOPIK));;
                             item.setJudul(obj.getString(TAG_JUDUL));
-                            item.setIsi(obj.getString(TAG_ISI));
+                            item.setTopik(obj.getString(TAG_TOPIK));
 
                             // menambah item ke array
                             itemList.add(item);

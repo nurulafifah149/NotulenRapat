@@ -5,11 +5,6 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-<<<<<<< HEAD
-        <item name="colorAccent">@color/colorAccent</item>
-    </style>
-
-=======
         <item name="colorAccent">@color/alertInfo</item>
     </style>
 
@@ -23,5 +18,4 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 
->>>>>>> 7b084f13fe1469cc8a11839afb8d1e934b162787
 </resources>

@@ -28,13 +28,10 @@
     <color name="btnWarning">#ffc107</color>
     <color name="btnInfo">#17a2b8</color>
 
-<<<<<<< HEAD
-=======
     <color name="list_divider">#d9d9d9</color>
     <color name="list_row_start_color">#ffffff</color>
     <color name="list_row_end_color">#ffffff</color>
     <color name="list_row_hover_start_color">#ebeef0</color>
     <color name="list_row_hover_end_color">#ebeef0</color>
 
->>>>>>> 7b084f13fe1469cc8a11839afb8d1e934b162787
     </resources>
