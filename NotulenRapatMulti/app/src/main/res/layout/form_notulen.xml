@@ -19,73 +19,43 @@
 
 
     <EditText
-        android:id="@+id/txt_tgl"
+        android:id="@+id/txt_tanggal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:clickable="true"
-        android:editable="false"
-        android:focusable="false"
-        android:singleLine="true"
         android:layout_marginBottom="10dp"
         android:background="@android:drawable/editbox_background_normal"
         android:hint="Tanggal" />
 
     <EditText
-        android:id="@+id/txt_jam"
+        android:id="@+id/txt_waktu"
         android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:clickable="true"
-        android:editable="false"
-        android:focusable="false"
         android:singleLine="true"
         android:background="@android:drawable/editbox_background_normal"
         android:hint="Jam" />
 
-    <Button
-        android:id="@+id/btn_get_datetime"
-        android:layout_marginBottom="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Get Date Time" />
 
     <EditText
-        android:layout_marginBottom="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:singleLine="true"
-        android:background="@android:drawable/editbox_background_normal"
-        android:id="@+id/hadir"
-        android:hint="Kehadiran" />
-
-    <EditText
+        android:id="@+id/txt_lokasi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lokasi"
         android:layout_marginBottom="10dp"
         android:singleLine="true"
         android:background="@android:drawable/editbox_background_normal"
         android:hint="Lokasi" />
 
-    <RadioButton
-        android:id="@+id/bulanan"
+    <EditText
+        android:id="@+id/txt_kehadiran"
         android:layout_marginBottom="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Rapat Bulanan" />
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:singleLine="true"
+        android:background="@android:drawable/editbox_background_normal"
+        android:hint="Kehadiran" />
 
-    <RadioButton
-        android:id="@+id/tahunan"
-        android:layout_marginBottom="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Rapat Tahunan" />
-
-    <RadioButton
-        android:id="@+id/rptkepala"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Rapat Kepala Labor" />
 
     <EditText
         android:id="@+id/txt_topik"
@@ -108,15 +78,14 @@
 
 
     <EditText
-        android:id="@+id/note"
-        android:layout_width="380dp"
-        android:layout_height="150dp"
-        android:layout_below="@id/title"
+        android:id="@+id/txt_isi"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
         android:layout_marginTop="20dp"
-        android:gravity="center"
         android:hint="Enter Note"
+        android:gravity="top"
         android:inputType="textMultiLine"
         android:paddingTop="20dp"
-        android:textSize="25sp" />
+         />
 
 </LinearLayout>

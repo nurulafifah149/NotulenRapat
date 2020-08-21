@@ -50,14 +50,24 @@ public class Adapter extends BaseAdapter {
             convertView = inflater.inflate(R.layout.list_row, null);
 
         TextView id2 = (TextView) convertView.findViewById(R.id.id2);
-        TextView topik = (TextView) convertView.findViewById(R.id.topik);
-        TextView judul = (TextView) convertView.findViewById(R.id.judul);
+        TextView tanggal = (TextView) convertView.findViewById(R.id.txt_tanggal);
+        TextView waktu = (TextView) convertView.findViewById(R.id.txt_waktu);
+        TextView lokasi = (TextView) convertView.findViewById(R.id.txt_lokasi);
+        TextView kehadiran = (TextView) convertView.findViewById(R.id.txt_kehadiran);
+        TextView topik = (TextView) convertView.findViewById(R.id.txt_topik);
+        TextView judul = (TextView) convertView.findViewById(R.id.txt_judul);
+        TextView isi = (TextView) convertView.findViewById(R.id.txt_isi);
 
         Data data = items.get(position);
 
-        id2.setText(data.getId());
+        id2.setText(data.getId2());
+        tanggal.setText(data.getTanggal());
+        waktu.setText(data.getWaktu());
+        lokasi.setText(data.getLokasi());
+        kehadiran.setText(data.getKehadiran());
         topik.setText(data.getTopik());
         judul.setText(data.getJudul());
+        isi.setText(data.getIsi());
 
         return convertView;
     }

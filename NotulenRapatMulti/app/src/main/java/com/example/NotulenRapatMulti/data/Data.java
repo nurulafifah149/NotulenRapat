@@ -1,13 +1,13 @@
 package com.example.NotulenRapatMulti.data;
 
 public class Data {
-    private String id, tanggal, waktu, lokasi, kehadiran, topik, judul, isi;
+    private String id2, tanggal, waktu, lokasi, kehadiran, topik, judul, isi;
 
     public Data() {
     }
 
     public Data(String id, String nama, String alamat) {
-        this.id = id;
+        this.id2 = id2;
         this.tanggal = tanggal;
         this.waktu = waktu;
         this.lokasi = lokasi;
@@ -17,19 +17,19 @@ public class Data {
         this.isi = isi;
     }
 
-    public String getId() {
-        return id;
+    public String getId2() {
+        return id2;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setId2(String id2) {
+        this.id2 = id2;
     }
 
     public String getTanggal() {
         return tanggal;
     }
 
-    public void setTanggal(String nama) {
+    public void setTanggal(String tanggal) {
         this.tanggal = tanggal;
     }
 

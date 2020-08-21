@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30dip"
-            android:text="REGISTER BELOW"
+            android:text="REGISTER"
             android:textSize="16dip" />
 
         <Spinner

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:background="@drawable/download"
-    tools:context="com.example.heru_hardadi_pc.NotulenRapatMulti.">
+    tools:context="com.example.NotulenRapatMulti.">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,9 +14,9 @@
 
         <ImageView
             android:id="@+id/logo"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="right"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="right|start"
             android:background="@drawable/user" />
 
         <TextView
@@ -65,6 +65,31 @@
             android:layout_height="1dp"
             android:layout_gravity="center"
             android:background="#448AFF" />
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:fitsSystemWindows="true">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    android:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            </android.support.design.widget.AppBarLayout>
+
+            <include layout="@layout/content_main" />
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
 
     </LinearLayout>
 
