@@ -1,11 +1,5 @@
 package com.example.NotulenRapatMulti.app;
 
-<<<<<<< HEAD
-/**
- * Created by heru_hardadi_pc on 04/08/2018.
- */
-=======
->>>>>>> 7b084f13fe1469cc8a11839afb8d1e934b162787
 
 import android.app.Application;
 import android.text.TextUtils;

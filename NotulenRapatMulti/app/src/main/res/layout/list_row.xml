@@ -6,7 +6,11 @@
     android:padding="16dp">
 
     <TextView
+<<<<<<< HEAD
         android:id="@+id/id"
+=======
+        android:id="@+id/id2"
+>>>>>>> 7b084f13fe1469cc8a11839afb8d1e934b162787
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="gone"/>
